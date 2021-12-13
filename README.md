@@ -1,5 +1,5 @@
 # ActiveLearning
-Active Learning of Abstract System Models from Traces using Bounded Model Checking:
+Active Learning of Abstract System Models from Traces using Model Checking:
 
 An active learning framework for generating concise abstractions of a system implementation, instrumented to track a set of system variables.
 Generated abstractions admit all system traces defined over the set of system variables.
