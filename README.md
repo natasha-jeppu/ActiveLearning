@@ -1,12 +1,12 @@
 # ActiveLearning
-Active Learning of Abstract System Models from Traces using Bounded Model Checking:
+Active Learning of Abstract System Models from Traces using Model Checking:
 
 An active learning framework for generating concise abstractions of a system implementation, instrumented to track a set of system variables.
 Generated abstractions admit all system traces defined over the set of system variables.
 
 ## Dependencies
 1. [CBMC v5.34](https://github.com/diffblue/cbmc) (install and add to PATH)
-2. [CVC4 v1.8](https://github.com/CVC4/CVC4-archived) (install and add to PATH)
+2. [CVC5 v0.0.5](https://github.com/cvc5/cvc5/releases/tag/cvc5-0.0.5) (install and add to PATH)
 3. [Trace2Model](https://github.com/natasha-jeppu/Trace2Model)
 4. Python 3.9
 
