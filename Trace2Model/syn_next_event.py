@@ -36,8 +36,11 @@ def simplify_expr(expr, types):
 		for rv in replace_var:
 			expr = expr.replace(rv[0], rv[1])
 
+	store_expr = expr
 	expr = simplify(expr)
 	expr = str(expr)
+	if '**' in expr:
+		expr = store_expr
 	expr = '(' + expr + ')'
 
 	if replace_var:
@@ -362,7 +365,7 @@ def gen_syn(input_dict,trace_dict):
 			f.write("\n(check-synth)\n")
 			f.close()
 
-			p = subprocess.Popen('cvc4 '+ full_path + 'aux_files/gen_event.sl', stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+			p = subprocess.Popen('cvc5-Linux '+ full_path + 'aux_files/gen_event.sl', stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
 			try:
 				output,o_err = p.communicate(timeout=3600)
 				p.kill()
