@@ -389,7 +389,7 @@ def gen_syn(input_dict,trace_dict):
 				exit(0)
 				continue
 
-			output = str(output).replace('b\'unsat\\n','').replace('\'','')
+			output = str(output).replace('b\'(\\n','').replace('\'','')
 
 			op_reg = '(define-fun next ('
 
