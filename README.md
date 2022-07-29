@@ -7,17 +7,24 @@ Generated abstractions admit all system traces defined over the set of system va
 ## Dependencies
 1. [CBMC v5.34](https://github.com/diffblue/cbmc) (install and add to PATH)
 2. [CVC5 v0.0.5](https://github.com/cvc5/cvc5/releases/tag/cvc5-0.0.5) (install and add to PATH)
-3. [Trace2Model](https://github.com/natasha-jeppu/Trace2Model)
+3. [Trace2Model](https://github.com/natasha-jeppu/Trace2Model) (available within this repository)
 4. Python 3.9
 
+## Tool Setup
+Install dependecies for the Trace2Model tool
+~~~
+pip3 install numpy pygraphviz transitions termcolor sympy
+~~~
+
 ## Usage
-Clone and setup repository
+Clone the repository
 ~~~
 git clone https://github.com/natasha-jeppu/ActiveLearning.git
 cd ActiveLearning
 ~~~
 
-The `benchmarks` folder has a set of example systems with Python modules for processing CBMC output.</br>
+A set of benchmarks is available [here](https://ora.ox.ac.uk/objects/uuid:f1b19a1a-f3c1-4eca-8755-73706c0af383).
+Download the benchmark set into the `benchmarks` folder and unzip.</br>
 To run any benchmark `<bench_name>` in `<bench_parent_folder>`:
 1. Navigate to the benchmark folder
 ~~~
