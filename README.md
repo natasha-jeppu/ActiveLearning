@@ -11,10 +11,13 @@ Generated abstractions admit all system traces defined over the set of system va
 4. Python 3.9
 
 ## Tool Setup
-Install dependecies for the Trace2Model tool
+1. Install dependecies for the Trace2Model tool
 ~~~
 pip3 install numpy pygraphviz transitions termcolor sympy
 ~~~
+The `pygraphviz` module requires `graphviz` to be installed. Kindly refer to the [PyGraphviz documentation](https://pygraphviz.github.io/documentation/stable/install.html) for installation instructions on different platforms.
+
+2. Install [CBMC v5.34](https://github.com/diffblue/cbmc/releases/tag/cbmc-5.34.0) and [CVC5 v0.0.5](https://github.com/cvc5/cvc5/releases/tag/cvc5-0.0.5) and add to PATH. The binaries are available in their respective repositories linked here.
 
 ## Usage
 Clone the repository
